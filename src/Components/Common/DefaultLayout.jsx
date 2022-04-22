@@ -22,6 +22,7 @@ import SubMenu from 'antd/lib/menu/SubMenu';
 const { Header, Sider, Content } = Layout;
 function DefaultLayout(props) {
     const [collapsed, setCollapsed] = useState(false)
+    const [active, setActive] = useState("/")
 
     return (
         <Layout>
@@ -34,7 +35,7 @@ function DefaultLayout(props) {
                     }
                 </div>
                 <Menu theme="dark" mode="inline"  >
-                    <Menu.Item key="/" icon={<AppstoreOutlined />}>
+                    <Menu.Item key="/" icon={<AppstoreOutlined />} >
                         <Link to="/">Dashboard</Link>
                     </Menu.Item>
                     <Menu.Item key="/sells" icon={<CheckCircleOutlined />} >

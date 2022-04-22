@@ -33,3 +33,7 @@
 .ant-menu-item a {
     display: block;
 }
+
+.is_active {
+    background: greenyellow;
+}
